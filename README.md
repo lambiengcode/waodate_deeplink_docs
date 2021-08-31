@@ -1,9 +1,9 @@
 ## Document Deeplink WAODATE
 
 ### Description:
-- Tài liệu report về cách cài đặt môi trường, cách viết code và cách test
+- Document about library, installation, coding and testing and some problems about i need everyone helps... :panda_face:
 
-### Lib:
+### Library:
 
 ```dart
 uni_links: ^0.5.1
@@ -69,7 +69,7 @@ uni_links: ^0.5.1
 - replace "[ANY_URL_NAME]" by http or https
 - replace "[YOUR_HOST]" by waodate.com
 
-```plist
+```xml
 <?xml ...>
 <!-- ... other tags -->
 <plist>
@@ -169,6 +169,54 @@ Future<void> initUniLinks() async {
 
 ### Test cases:
 
-### Features:
+<table>
+    <thead>
+      <tr>
+        <th>Case</th>
+        <th>Android</th>
+        <th>iOS</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>https://waodate.com/home</td>
+            <td><code>DONE</code></td>
+            <td><code>DOING</code></td>
+        </tr>
+        <tr>
+            <td>https://waodate.com/vvip</td>
+            <td><code>DONE</code></td>
+            <td><code>DOING</code></td>
+        </tr>
+         <tr>
+            <td>https://waodate.com/profile/:id</td>
+            <td><code>DONE</code></td>
+            <td><code>DOING</code></td>
+        </tr>
+         <tr>
+            <td>https://waodate.com/concept/:id</td>
+            <td><code>DONE</code></td>
+            <td><code>DOING</code></td>
+        </tr>
+    </tbody>
+  </table>
+  
+**If you want test, lets run below bash code in terminal**
+
+***Android***
+```terminal
+adb shell 'am start -W -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d "https://waodate.com/home"'
+```
+
+***iOS***
+```terminal
+/usr/bin/xcrun simctl openurl booted "https:waodate.com/home"
+```
+
+### Problems:
+
+- I were config for iOS like documents: [uni_link](https://github.com/avioli/uni_links/blob/master/uni_links/README.md)
+- But can't test on iOS simulator. I think have a problem here: [Apple_Document](https://developer.apple.com/documentation/xcode/supporting-associated-domains?preferredLanguage=occ)
+- OKAY, if you have a idea for resolve this problem, lets contact me by email or skype
 
 ### Author: lambiengcode from waodate.com
