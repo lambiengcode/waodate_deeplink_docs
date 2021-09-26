@@ -181,22 +181,22 @@ Future<void> initUniLinks() async {
         <tr>
             <td>https://waodate.com/home</td>
             <td><code>DONE</code></td>
-            <td><code>DOING</code></td>
+            <td><code>DONE</code></td>
         </tr>
         <tr>
             <td>https://waodate.com/vvip</td>
             <td><code>DONE</code></td>
-            <td><code>DOING</code></td>
+            <td><code>DONE</code></td>
         </tr>
          <tr>
             <td>https://waodate.com/profile/:id</td>
             <td><code>DONE</code></td>
-            <td><code>DOING</code></td>
+            <td><code>DONE</code></td>
         </tr>
          <tr>
             <td>https://waodate.com/concept/:id</td>
             <td><code>DONE</code></td>
-            <td><code>DOING</code></td>
+            <td><code>DONE</code></td>
         </tr>
     </tbody>
   </table>
